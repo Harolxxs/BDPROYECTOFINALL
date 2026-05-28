@@ -11,10 +11,12 @@
 <class>modelo.Vendedor_1</class>
 <exclude-unlisted-classes>false</exclude-unlisted-classes>
 <properties>
-<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/AUTOFIELSA?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+<property name="jakarta.persistence.jdbc.url"
+value="jdbc:mysql://kodama.proxy.rlwy.net:54567/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+
 <property name="jakarta.persistence.jdbc.user" value="root"/>
 <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-<property name="jakarta.persistence.jdbc.password" value="123456"/>
+<property name="jakarta.persistence.jdbc.password" value="fubAvvmYraloyVwmjUdeyPMNlqxowjVH"/>
 <!--  No modificar tablas existentes  -->
 <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
 <!--  Log SQL en consola (útil para depurar, quitar en producción)  -->
@@ -33,10 +35,12 @@
 <class>modelo.Auto</class>
 <exclude-unlisted-classes>false</exclude-unlisted-classes>
 <properties>
-<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/AUTOFIELSA?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+<property name="jakarta.persistence.jdbc.url"
+value="jdbc:mysql://kodama.proxy.rlwy.net:54567/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+
 <property name="jakarta.persistence.jdbc.user" value="root"/>
 <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-<property name="jakarta.persistence.jdbc.password" value="123456"/>
+<property name="jakarta.persistence.jdbc.password" value="fubAvvmYraloyVwmjUdeyPMNlqxowjVH"/>
 <!--  Crea la tabla si no existe, no borra datos existentes  -->
 <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
 <!--  Log SQL en consola  -->
