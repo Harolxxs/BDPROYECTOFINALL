@@ -14,7 +14,7 @@
         <class>modelo.Cliente_1</class>
         <class>modelo.Vendedor_1</class>
         <class>modelo.Auto_1</class>
-
+        <class>modelo.Venta_1</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
 
         <properties>
@@ -46,5 +46,6 @@
         </properties>
 
     </persistence-unit>
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
 
 </persistence>
