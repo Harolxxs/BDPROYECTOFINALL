@@ -26,6 +26,7 @@ import jakarta.persistence.Table;
     @NamedQuery(name = "Auto_1.findByMarca", query = "SELECT a FROM Auto_1 a WHERE a.marca = :marca"),
     @NamedQuery(name = "Auto_1.findByModelo", query = "SELECT a FROM Auto_1 a WHERE a.modelo = :modelo"),
     @NamedQuery(name = "Auto_1.findByColor", query = "SELECT a FROM Auto_1 a WHERE a.color = :color"),
+    @NamedQuery(name = "Auto_1.findByCondicion", query = "SELECT a FROM Auto_1 a WHERE a.condicion = :condicion"),
     @NamedQuery(name = "Auto_1.findByValorVenta", query = "SELECT a FROM Auto_1 a WHERE a.valorVenta = :valorVenta")})
 public class Auto_1 implements Serializable {
 
@@ -43,10 +44,14 @@ public class Auto_1 implements Serializable {
     @Basic(optional = false)
     @Column(name = "color")
     private String color;
+    @Basic(optional = false)
+    @Column(name = "condicion")
+    private String condicion;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Basic(optional = false)
     @Column(name = "valor_venta")
     private BigDecimal valorVenta;
+
 
     public Auto_1() {
     }
@@ -55,12 +60,14 @@ public class Auto_1 implements Serializable {
         this.placa = placa;
     }
 
-    public Auto_1(String placa, String marca, int modelo, String color, BigDecimal valorVenta) {
+    public Auto_1(String placa, String marca, int modelo, String color, String condicion, BigDecimal valorVenta) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
+        this.condicion = condicion;
         this.valorVenta = valorVenta;
+        
     }
 
     public String getPlaca() {
@@ -101,6 +108,13 @@ public class Auto_1 implements Serializable {
 
     public void setValorVenta(BigDecimal valorVenta) {
         this.valorVenta = valorVenta;
+    }
+    public String getCondicion() {
+    return condicion;
+    }
+
+    public void setCondicion(String condicion) {
+    this.condicion = condicion;
     }
 
     @Override

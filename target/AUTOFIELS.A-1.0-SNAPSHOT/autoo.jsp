@@ -30,9 +30,10 @@
             String marca          = request.getParameter("marca");
             int modelo            = Integer.parseInt(request.getParameter("modelo"));
             String color          = request.getParameter("color");
+            String condicion      = request.getParameter("condicion");
             BigDecimal valorVenta = new BigDecimal(request.getParameter("valorVenta"));
             
-            Auto_1 auto = new Auto_1(placa, marca, modelo, color, valorVenta);
+            Auto_1 auto = new Auto_1(placa, marca, modelo, color, condicion, valorVenta);
             
             controller.create(auto);
             mensaje = "Auto guardado correctamente.";
@@ -90,6 +91,16 @@
         <label>Color:</label>
         <input type="text" name="color" required />
         
+        <label>Condición:</label>
+            <label>
+       <select name="condicion" required >
+    <option value="">Seleccione...</option>
+    <option value="NUEVO">NUEVO</option>
+    <option value="USADO">USADO</option>
+        </select>
+                </label>
+        <br>
+        
         <label>Valor de Venta:</label>
         <input type="number" name="valorVenta" step="0.01" required />
         
@@ -109,6 +120,7 @@
         <th>Marca</th>
         <th>Modelo</th>
         <th>Color</th>
+        <th>Condicion</th>
         <th>Valor Venta</th>
     </tr>
     <% for (Auto_1 a : autos) { %>
@@ -117,6 +129,7 @@
         <td><%= a.getMarca() %></td>
         <td><%= a.getModelo() %></td>
         <td><%= a.getColor() %></td>
+        <td><%= a.getCondicion() %></td>
         <td>$<%= a.getValorVenta() %></td>
     </tr>
     <% } %>
