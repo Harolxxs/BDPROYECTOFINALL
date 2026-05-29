@@ -30,6 +30,12 @@
 <artifactId>eclipselink</artifactId>
 <version>3.0.4</version>
 </dependency>
+
+<dependency>
+    <groupId>org.eclipse.persistence</groupId>
+    <artifactId>org.eclipse.persistence.jpa</artifactId>
+    <version>3.0.4</version>
+</dependency>
 <!--  ================================================  -->
 <!--  MySQL Connector                                    -->
 <!--  ================================================  -->
@@ -44,6 +50,11 @@
     <artifactId>jakarta.persistence-api</artifactId>
     <version>3.0.0</version>
 </dependency>
+    <dependency>
+        <groupId>org.eclipse.persistence</groupId>
+        <artifactId>jakarta.persistence</artifactId>
+      <version>2.2.3</version>
+    </dependency>
 </dependencies>
 <build>
 <plugins>

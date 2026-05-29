@@ -5,6 +5,7 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
              https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
 
+<<<<<<< HEAD
 <persistence-unit name="com.mycompany_AUTOFIELS.A_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>modelo.Cliente_1</class>
@@ -23,5 +24,48 @@
         <property name="eclipselink.logging.parameters" value="true"/>
     </properties>
 </persistence-unit>
+=======
+    <persistence-unit name="com.mycompany_AUTOFIELS.A_war_1.0-SNAPSHOTPU"
+                      transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+        <!-- ENTIDADES -->
+        <class>modelo.Cliente_1</class>
+        <class>modelo.Vendedor_1</class>
+        <class>modelo.Auto_1</class>
+
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <properties>
+
+            <!-- CONEXION MYSQL RAILWAY -->
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://kodama.proxy.rlwy.net:54567/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="root"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="fubAvvmYraloyVwmjUdeyPMNlqxowjVH"/>
+
+            <!-- NO CREAR TABLAS -->
+            <property name="jakarta.persistence.schema-generation.database.action"
+                      value="none"/>
+
+            <!-- LOG SQL -->
+            <property name="eclipselink.logging.level.sql"
+                      value="FINE"/>
+
+            <property name="eclipselink.logging.parameters"
+                      value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
 
 </persistence>

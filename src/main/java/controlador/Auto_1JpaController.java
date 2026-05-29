@@ -4,6 +4,13 @@
  */
 package controlador;
 
+<<<<<<< HEAD
+=======
+/**
+ *
+ * @author harol
+ */
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
 import controlador.exceptions.NonexistentEntityException;
 import controlador.exceptions.PreexistingEntityException;
 import java.io.Serializable;
@@ -15,9 +22,16 @@ import jakarta.persistence.EntityNotFoundException;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import modelo.Auto_1;
+<<<<<<< HEAD
 
 public class Auto_1JpaController implements Serializable {
 
+=======
+import modelo.Cliente_1;
+
+public class Auto_1JpaController implements Serializable{
+    
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
     public Auto_1JpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
@@ -26,12 +40,18 @@ public class Auto_1JpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
+<<<<<<< HEAD
 
     public void create(Auto_1 auto) throws PreexistingEntityException, Exception {
+=======
+    
+    public void create(Auto_1 auto_1) throws PreexistingEntityException, Exception {
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
         EntityManager em = null;
         try {
             em = getEntityManager();
             em.getTransaction().begin();
+<<<<<<< HEAD
             em.persist(auto);
             em.getTransaction().commit();
         } catch (Exception ex) {
@@ -84,6 +104,26 @@ public class Auto_1JpaController implements Serializable {
         }
     }
 
+=======
+            em.persist(auto_1);
+            em.getTransaction().commit();
+        } catch (Exception ex) {
+            if (findAuto_1(auto_1.getPlaca()) != null){
+                throw new PreexistingEntityException("Auto_1" + auto_1 + " already exists.", ex);
+            }
+            throw ex;
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+    }
+    
+    
+    
+    
+    
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
     public List<Auto_1> findAuto_1Entities() {
         return findAuto_1Entities(true, -1, -1);
     }
@@ -91,7 +131,12 @@ public class Auto_1JpaController implements Serializable {
     public List<Auto_1> findAuto_1Entities(int maxResults, int firstResult) {
         return findAuto_1Entities(false, maxResults, firstResult);
     }
+<<<<<<< HEAD
 
+=======
+    
+    
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
     private List<Auto_1> findAuto_1Entities(boolean all, int maxResults, int firstResult) {
         EntityManager em = getEntityManager();
         try {
@@ -107,6 +152,7 @@ public class Auto_1JpaController implements Serializable {
             em.close();
         }
     }
+<<<<<<< HEAD
 
     public Auto_1 findAuto_1(Long id) {
         EntityManager em = getEntityManager();
@@ -117,6 +163,25 @@ public class Auto_1JpaController implements Serializable {
         }
     }
 
+=======
+    
+    public Auto_1 findAuto_1(String placa) {
+
+    if (placa == null || placa.trim().isEmpty()) {
+        return null;
+    }
+
+    EntityManager em = getEntityManager();
+
+    try {
+        return em.find(Auto_1.class, placa);
+
+    } finally {
+        em.close();
+    }
+}
+    
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
     public int getAuto_1Count() {
         EntityManager em = getEntityManager();
         try {
@@ -130,5 +195,8 @@ public class Auto_1JpaController implements Serializable {
         }
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827

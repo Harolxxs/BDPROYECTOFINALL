@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Malguz\Documents\NuevaCarpeta\BDPROYECTOFINALL\src\main\java\controlador\Auto_1JpaController.java
 C:\Users\Malguz\Documents\NuevaCarpeta\BDPROYECTOFINALL\src\main\java\modelo\Vendedor.java
 C:\Users\Malguz\Documents\NuevaCarpeta\BDPROYECTOFINALL\src\main\java\controlador\exceptions\NonexistentEntityException.java
@@ -14,3 +15,18 @@ C:\Users\Malguz\Documents\NuevaCarpeta\BDPROYECTOFINALL\src\main\java\controlado
 C:\Users\Malguz\Documents\NuevaCarpeta\BDPROYECTOFINALL\src\main\java\modelo\Auto.java
 C:\Users\Malguz\Documents\NuevaCarpeta\BDPROYECTOFINALL\src\main\java\controlador\Vendedor_1JpaController.java
 C:\Users\Malguz\Documents\NuevaCarpeta\BDPROYECTOFINALL\src\main\java\modelo\Cliente.java
+=======
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\controlador\Auto_1JpaController.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\controlador\Cliente_1JpaController.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\modelo\Persona.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\controlador\exceptions\PreexistingEntityException.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\controlador\Vendedor_1JpaController.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\controlador\exceptions\IllegalOrphanException.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\modelo\Vendedor_1.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\modelo\Auto_1.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\modelo\Auto.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\modelo\Cliente.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\modelo\Cliente_1.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\modelo\Vendedor.java
+C:\Users\harol\OneDrive - Universidad Distrital Francisco José de Caldas\Documentos\AUTOFIELS.A\AUTOFIELS.A\src\main\java\controlador\exceptions\NonexistentEntityException.java
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827

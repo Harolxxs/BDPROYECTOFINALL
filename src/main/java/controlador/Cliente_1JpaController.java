@@ -138,6 +138,5 @@ public class Cliente_1JpaController implements Serializable {
         } finally {
             em.close();
         }
-    }
-    
+    } 
 }

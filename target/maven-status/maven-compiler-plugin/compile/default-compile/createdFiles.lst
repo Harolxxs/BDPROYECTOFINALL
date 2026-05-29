@@ -1,8 +1,13 @@
 controlador\exceptions\NonexistentEntityException.class
+<<<<<<< HEAD
 modelo\Venta.class
 modelo\Vendedor_1.class
 modelo\Vendedor.class
 controlador\Venta_1JpaController.class
+=======
+modelo\Vendedor_1.class
+modelo\Vendedor.class
+>>>>>>> 7515cb150757f0a7c8d5382de865770d1c217827
 controlador\Cliente_1JpaController.class
 controlador\exceptions\PreexistingEntityException.class
 modelo\Cliente_1.class
