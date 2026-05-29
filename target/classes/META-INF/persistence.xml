@@ -10,6 +10,7 @@
     <class>modelo.Cliente_1</class>
     <class>modelo.Vendedor_1</class>
     <class>modelo.Auto_1</class>
+    <class>modelo.Venta_1</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
         <property name="jakarta.persistence.jdbc.url"
