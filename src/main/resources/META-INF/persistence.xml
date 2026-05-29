@@ -9,6 +9,7 @@
 <!--  Clases existentes en la BD  -->
 <class>modelo.Cliente_1</class>
 <class>modelo.Vendedor_1</class>
+<class>modelo.Auto_1</class>
 <exclude-unlisted-classes>false</exclude-unlisted-classes>
 <properties>
 <property name="jakarta.persistence.jdbc.url"
@@ -46,6 +47,7 @@ value="jdbc:mysql://kodama.proxy.rlwy.net:54567/railway?useSSL=false&amp;allowPu
 <!--  Log SQL en consola  -->
 <property name="eclipselink.logging.level.sql" value="FINE"/>
 <property name="eclipselink.logging.parameters" value="true"/>
+
 </properties>
 </persistence-unit>
 </persistence>

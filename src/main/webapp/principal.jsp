@@ -17,6 +17,7 @@
 		
 		<li><a href="index.jsp">Registrar Cliente</a></li>
                 <li><a href="vendedor.jsp">Registrar vendedor</a></li>
+                <li><a href="autoo.jsp">Registrar auto</a></li>
 	</ul>
     </body>
 </html>
