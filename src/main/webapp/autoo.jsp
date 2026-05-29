@@ -12,7 +12,7 @@
 <%@page import="java.util.List"%>
 <%
     // 1. Inicialización del EntityManagerFactory (Unidad de Persistencia)
-   <%
+   
     // Forzamos la creación de una nueva factoría con los cambios del persistence.xml
     EntityManagerFactory emf = Persistence.createEntityManagerFactory(
         "com.mycompany_AUTOFIELS.A_war_1.0-SNAPSHOTPU"
@@ -77,7 +77,7 @@
 
 <h2>Registrar Auto</h2>
 <div class="form-box">
-    <form method="POST" action="index.jsp">
+    <form method="POST" action="autoo.jsp">
         <label>Placa:</label>
         <input type="text" name="placa" required placeholder="Ej: ABC-123" />
         

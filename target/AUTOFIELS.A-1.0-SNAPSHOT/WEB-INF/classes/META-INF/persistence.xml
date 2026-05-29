@@ -1,53 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
-<!--  ============================================================  -->
-<!--  PU1 — Unidad principal: clases ya existentes en la BD         -->
-<!--  schema-generation: none  →  no toca las tablas existentes     -->
-<!--  ============================================================  -->
-<persistence-unit name="com.mycompany_AUTOFIELS.A_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
-<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-<!--  Clases existentes en la BD  -->
-<class>modelo.Cliente_1</class>
-<class>modelo.Vendedor_1</class>
-<class>modelo.Auto_1</class>
-<exclude-unlisted-classes>false</exclude-unlisted-classes>
-<properties>
-<property name="jakarta.persistence.jdbc.url"
-value="jdbc:mysql://kodama.proxy.rlwy.net:54567/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="3.0"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
 
-<property name="jakarta.persistence.jdbc.user" value="root"/>
-<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-<property name="jakarta.persistence.jdbc.password" value="fubAvvmYraloyVwmjUdeyPMNlqxowjVH"/>
-<!--  No modificar tablas existentes  -->
-<property name="jakarta.persistence.schema-generation.database.action" value="none"/>
-<!--  Log SQL en consola (útil para depurar, quitar en producción)  -->
-<property name="eclipselink.logging.level.sql" value="FINE"/>
-<property name="eclipselink.logging.parameters" value="true"/>
-</properties>
-</persistence-unit>
-<!--  ============================================================  -->
-<!--  PU2 — Unidad para clases NUEVAS que crean tabla en la BD      -->
-<!--  schema-generation: create  →  crea la tabla si no existe      -->
-<!--  Agrega aquí cada clase nueva como modelo.Auto                 -->
-<!--  ============================================================  -->
-<persistence-unit name="com.mycompany_AUTOFIELS.A_war_1.0-SNAPSHOTPU2" transaction-type="RESOURCE_LOCAL">
-<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-<!--  Agrega aquí las clases nuevas que necesitan crear tabla  -->
-<class>modelo.Auto</class>
-<exclude-unlisted-classes>false</exclude-unlisted-classes>
-<properties>
-<property name="jakarta.persistence.jdbc.url"
-value="jdbc:mysql://kodama.proxy.rlwy.net:54567/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+    <persistence-unit name="com.mycompany_AUTOFIELS.A_war_1.0-SNAPSHOTPU"
+                      transaction-type="RESOURCE_LOCAL">
 
-<property name="jakarta.persistence.jdbc.user" value="root"/>
-<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-<property name="jakarta.persistence.jdbc.password" value="fubAvvmYraloyVwmjUdeyPMNlqxowjVH"/>
-<!--  Crea la tabla si no existe, no borra datos existentes  -->
-<property name="jakarta.persistence.schema-generation.database.action" value="create"/>
-<!--  Log SQL en consola  -->
-<property name="eclipselink.logging.level.sql" value="FINE"/>
-<property name="eclipselink.logging.parameters" value="true"/>
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
-</properties>
-</persistence-unit>
+        <!-- ENTIDADES -->
+        <class>modelo.Cliente_1</class>
+        <class>modelo.Vendedor_1</class>
+        <class>modelo.Auto_1</class>
+
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <properties>
+
+            <!-- CONEXION MYSQL RAILWAY -->
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://kodama.proxy.rlwy.net:54567/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="root"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="fubAvvmYraloyVwmjUdeyPMNlqxowjVH"/>
+
+            <!-- NO CREAR TABLAS -->
+            <property name="jakarta.persistence.schema-generation.database.action"
+                      value="none"/>
+
+            <!-- LOG SQL -->
+            <property name="eclipselink.logging.level.sql"
+                      value="FINE"/>
+
+            <property name="eclipselink.logging.parameters"
+                      value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+
 </persistence>
